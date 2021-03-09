@@ -1,0 +1,18 @@
+Package: CALIBERate
+Type: Package
+Title: Convert Narrow Code Table To Wide Phenotype Table Using CALIBER Phenotypes
+Version: 0.1.0
+Authors@R: person("Chris", "Tomlinson", email = "christopher.tomlinson@ucl.ac.uk", role = c("aut", "cre"))
+Description: Contains a set of functions for working with Electronic Health Records (EHR) data and CALIBER phenotypes.Main purpose is to convert a narrow table of clinical codes to a wide table of CALIBER phenotypes.
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    data.table, 
+    dplyr
+Date: 2021-03-09
+URL: https://github.com/tomlincr/CALIBERate
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
