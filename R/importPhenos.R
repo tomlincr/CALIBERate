@@ -14,7 +14,7 @@ for (pheno in 1:nrow(dictionary)) {
   pheno_name = dictionary$phenotype[pheno]
   file_name = dictionary$ICD[pheno]
   if (file_name == "") next # skip import if filename is empty
-  path = paste0("./chronological-map-phenotypes-master/secondary_care/", file_name)
+  path = paste0("./chronological-map-phenotypes/secondary_care/", file_name)
   codelist = fread(path)
   # NB at *present* sum(Disease != Phenotype) = 0
   # Therefore adding phenotype name may be unecessary but included for completion
@@ -30,7 +30,7 @@ for (pheno in 1:nrow(dictionary)) {
   pheno_name = dictionary$phenotype[pheno]
   file_name = dictionary$OPCS[pheno]
   if (file_name == "") next # skip import if filename is empty
-  path = paste0("./chronological-map-phenotypes-master/secondary_care/", file_name)
+  path = paste0("./chronological-map-phenotypes/secondary_care/", file_name)
   codelist = fread(path)
   # NB at *present* sum(Disease != Phenotype) = 0
   # Therefore adding phenotype name may be unecessary but included for completion
@@ -46,7 +46,7 @@ for (pheno in 1:nrow(dictionary)) {
   pheno_name = dictionary$phenotype[pheno]
   file_name = dictionary$CPRD[pheno]
   if (file_name == "") next # skip import if filename is empty
-  path = paste0("./chronological-map-phenotypes-master/primary_care/", file_name)
+  path = paste0("./chronological-map-phenotypes/primary_care/", file_name)
   codelist = fread(path)
   # NB at *present* sum(Disease != Phenotype) = 0
   # Therefore adding phenotype name may be unecessary but included for completion
