@@ -4,7 +4,7 @@ library(data.table)
 
 # Import dictionary -------------------------------------------------------
 
-dictionary = fread("./chronological-map-phenotypes-master/dictionary.csv")
+dictionary = fread("./chronological-map-phenotypes/dictionary.csv")
 
 
 # Build ICD-10 lookup table -----------------------------------------------
