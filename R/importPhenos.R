@@ -54,3 +54,12 @@ for (pheno in 1:nrow(dictionary)) {
   CPRD = rbindlist(list(CPRD, codelist))
 }
 
+
+# Strip symbols -----------------------------------------------------------
+
+# Decision to strip decimal points from codes as this is done in pre-processing for HES
+
+ICD$ICD10code = gsub("[[:punct:]]", "", ICD$ICD10code)
+OPCS$OPCS4code = gsub("[[:punct:]]", "", OPCS$OPCS4code)
+# Unsure about CPRD therefore leaving for now!
+# TODO: build parameter into library to allow specification of this process on loading
